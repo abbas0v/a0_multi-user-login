@@ -1,8 +1,8 @@
 <?php
-include_once 'connect2.php';
+include_once 'connect.php';
 include 'functions.php';
 $login = new Login;
-$login->Login();
+$login->LoginSystem();
 $login->SessionCheck();
 $login->UserType();
 ?>

@@ -1,11 +1,6 @@
 <?php
-class ConnectDB{
-  public function IncludeDB(){
-    include 'connect.php';
-  }
-}
 class Login{
-  public function Login(){
+  public function LoginSystem(){
     session_start(); // Starting Session
     $error = ''; // Variable To Store Error Message
     if (isset($_POST['submit'])) {
@@ -17,8 +12,6 @@ class Login{
         // Define $username and $password
         $username = $_POST['login'];
         $password = md5($_POST['password']);
-        // mysqli_connect() function opens a new connection to the MySQL server.
-        //$conn = mysqli_connect("localhost", "root", "", "norsuyeni");
         // SQL query to fetch information of registerd users and finds user match.
         $query = "SELECT login, password FROM users WHERE login=? AND password=? LIMIT 1";
         // To protect MySQL injection for Security purpose
@@ -60,7 +53,12 @@ class Login{
       header("Location:../user/simpleuser/");
     }
   }
-
+}
+class UserFunctions{
+  public function UserName(){
+    $username = $_SESSION["name"];
+    echo $username;
+  }
 }
 
 ?>
