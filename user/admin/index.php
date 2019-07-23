@@ -1,4 +1,4 @@
-<?php include 'settings.php'; ?><!--Include settings-->
+<?php include 'settings.php'; //include settings ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>This is Admin page</h1>
-    <h2>Hello: <?php $ufunc->UserName(); ?></h2>
+    <h2>Hello: <?php $ufunc->UserName(); //Show name who is in session user?></h2>
     <a href="../../includes/logout.php">Logout</a>
   </body>
 </html>

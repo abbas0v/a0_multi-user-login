@@ -22,14 +22,13 @@ class Login{
         $stmt->store_result();
         if($stmt->fetch()) //fetching the contents of the row {
           $_SESSION['login'] = $username; // Initializing Session
-        //header("location: profile.php"); // Redirecting To Profile Page
       }
       mysqli_close($conn); // Closing Connection
     }
   }
   public function SessionVerify(){
     if(isset($_SESSION['login'])){
-    header("location: includes/checkuser.php"); // Redirecting To Profile Page
+    header("location: includes/checkuser.php"); // Check user session and role
     }
   }
   public function SessionCheck(){
@@ -46,9 +45,11 @@ class Login{
     $_SESSION["role"] = $row["role"];
   }
   public function UserType(){
+    //if user role is 1, redirect to admin page
     if ($_SESSION["role"] == 1) {
       header("Location:../user/admin/");
     }
+    //if user role is 0, redirect to user page
     if ($_SESSION["role"] == 0) {
       header("Location:../user/simpleuser/");
     }
