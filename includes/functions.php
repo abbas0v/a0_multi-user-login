@@ -60,5 +60,4 @@ class UserFunctions{
     echo $username;
   }
 }
-
 ?>
