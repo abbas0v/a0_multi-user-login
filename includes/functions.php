@@ -49,7 +49,7 @@ class Login{
     if ($_SESSION["role"] == 1) {
       header("Location:../user/admin/");
     }
-    if ($_SESSION["role"] == 2) {
+    if ($_SESSION["role"] == 0) {
       header("Location:../user/simpleuser/");
     }
   }
