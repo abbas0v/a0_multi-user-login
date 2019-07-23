@@ -1,5 +1,5 @@
 {
-    "name": "phpmultiuserlogin",
+    "name": "abbas0v/php-multi-user-login",
     "description": "Multi-user login with PHP and MySQL",
     "require": {
         "php": "^5.6",
