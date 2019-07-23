@@ -1,0 +1,9 @@
+{
+    "name": "php_multi-user_login",
+    "description": "Multi-user login with PHP and MySQL",
+    "require": {
+        "php": "^5.6",
+        "mysql": "5.6",
+        "another-vendor/package": "1.*"
+    }
+}
