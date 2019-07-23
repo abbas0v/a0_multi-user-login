@@ -14,3 +14,7 @@ includes/connect.php
 ```
 DB/phpmultiuserlogin.sql
 ```
+```
+Admin: admin@admin.com | 123
+User: user@user.com | 123
+```
