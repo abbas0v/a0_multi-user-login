@@ -1,11 +1,11 @@
 <?php
 class ConnectDB{
   public function IncludeDB(){
-    include 'connect2.php';
+    include 'connect.php';
   }
 }
 class Login{
-  public function LoginNorsu(){
+  public function Login(){
     session_start(); // Starting Session
     $error = ''; // Variable To Store Error Message
     if (isset($_POST['submit'])) {
@@ -13,7 +13,7 @@ class Login{
         $error = "Username or Password is invalid";
       }
       else{
-        include 'connect2.php';
+        include 'connect.php';
         // Define $username and $password
         $username = $_POST['login'];
         $password = md5($_POST['password']);
