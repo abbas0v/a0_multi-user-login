@@ -1,10 +1,10 @@
 {
     "name": "abbas0v/php-multi-user-login",
     "description": "Multi-user login with PHP and MySQL",
+    "license": "MIT",
     "require": {
         "php": "^5.6",
         "mysql": "5.6",
-        "license": "MIT",
         "another-vendor/package": "1.*"
     }
 }
