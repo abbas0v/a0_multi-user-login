@@ -1,4 +1,4 @@
-# php_multi-user_login
+# PHP Multi-user login script with PHP
 Multi-user login with PHP and MySQL
 
 ### Prerequisites
