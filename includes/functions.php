@@ -20,7 +20,7 @@ class Login{
         $stmt->execute();
         $stmt->bind_result($username, $password);
         $stmt->store_result();
-        if($stmt->fetch()) //fetching the contents of the row {
+        if($stmt->fetch()) { //fetching the contents of the row 
           $_SESSION['login'] = $username; // Initializing Session
       }
       mysqli_close($conn); // Closing Connection
