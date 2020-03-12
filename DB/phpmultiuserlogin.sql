@@ -34,7 +34,7 @@ CREATE TABLE `users` (
   `login` varchar(250) NOT NULL,
   `password` varchar(250) NOT NULL,
   `role` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Tablo döküm verisi `users`
